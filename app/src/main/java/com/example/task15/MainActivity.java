@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         adb.setNegativeButton("Exit", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
+
             }
         });
         AlertDialog ad=adb.create();
@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Back_To_White(View view) {
+        lL.setBackgroundColor(Color.WHITE);
     }
 
     public void Text_Message(View view) {
